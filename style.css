@@ -80,6 +80,16 @@ body * {
   margin-top: 8px;
 }
 
+#paragraph1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+
+#paragraph2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+
 /* Switch*/
 #switch {
   position: relative;
@@ -183,6 +193,6 @@ footer {
     --bg-url: url(./assets/asets/bg-desktop.jpg);
   }
   .light {
-    --bg.url: url(./assets/assets/bg-desktop-light.jpg);
+    --bg-url: url(./assets/assets/bg-desktop-light.jpg);
   }
 }

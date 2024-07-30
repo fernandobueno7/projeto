@@ -27,11 +27,11 @@ function toggleMode() {
   // substituir o primeiro paragrafo
   if (html.classList.contains("light")) {
     // se tiver light mode, adicionar a imagem light
-    paragraph1.textContent = "Pedro Matos"
+    paragraph1.textContent = "@pedrohematos"
     paragraph2.textContent = "Aprendiz de Mário Kart"
   } else {
     // se tiver sem light mode, manter a imagem normal
-    paragraph1.textContent = "Fernando Bueno"
+    paragraph1.textContent = "@fernandobueno7"
     paragraph2.textContent = "King of Mário Kart"
   }
 }
