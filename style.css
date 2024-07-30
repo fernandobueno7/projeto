@@ -103,16 +103,28 @@ body * {
   background: white var(--switch-bg-url) no-repeat center;
   border: 0;
   border-radius: 50%;
+  
   position: absolute;
   top: 50%;
   left: 0;
   z-index: 1;
   transform: translateY(-50%);
+
+  animation: slide-back 0.2s;
 }
 
+/* previo 
 .light #switch button {
   right: 0;
   left: initial;
+} */
+
+.light #switch button {
+  animation: slide-in 0.4s forwards;
+}
+
+#switch button:hover {
+  outline: 8px solid var(--highlight-color);
 }
 
 #switch span {
@@ -196,3 +208,21 @@ footer {
     --bg-url: url(./assets/assets/bg-desktop-light.jpg);
   }
 }
+ /* Animation */
+ @keyframes slide-in {
+  from {
+    left:0;
+  }
+  to {
+    left: 50%; 
+  }
+ }
+
+ @keyframes slide-back {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
+  }
+ }
